@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import Peer, { DataConnection } from 'peerjs';
+import Peer from 'peerjs';
 import './App.css';
 
 type Player = 'X' | 'O' | '';
 type Winner = 'X' | 'O' | 'draw' | null;
+type DataConnection = any;
 
 interface GameData {
   type: 'INIT_GAME' | 'MOVE' | 'RESET';
