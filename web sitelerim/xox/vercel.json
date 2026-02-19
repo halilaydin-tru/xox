@@ -4,5 +4,11 @@
   "framework": "vite",
   "env": {
     "VITE_APP_TITLE": "XOX P2P"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
