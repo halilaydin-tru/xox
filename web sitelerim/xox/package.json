@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npm run copy-redirects",
-    "copy-redirects": "cp public/_redirects dist/_redirects || true",
+    "build": "tsc -b && vite build",
+    "postbuild": "node ./scripts/copy-redirects.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
