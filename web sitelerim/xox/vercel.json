@@ -6,6 +6,7 @@
     "VITE_APP_TITLE": "XOX P2P"
   },
   "rewrites": [
-    { "source": "/:path*", "destination": "/index.html" }
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/.*", "destination": "/index.html" }
   ]
 }
